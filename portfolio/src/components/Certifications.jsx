@@ -93,8 +93,9 @@ import { useState } from "react";
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null);
+const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not+Available";
 
-  const certs = [
+    const certs = [
     {
       title: "What is Data Science?",
       issuer: "Coursera",
@@ -105,7 +106,7 @@ export default function Certifications() {
       title: "Diploma in Information Technology",
       issuer: "University of Colombo",
       link: "https://ucsc.cmb.ac.lk/verify/",
-      image: DS,
+      image: null,
     },
     {
       title: "Python for Data Science, AI & Development",
@@ -123,7 +124,7 @@ export default function Certifications() {
       title: "Diploma in ICT & English",
       issuer: "ICBT Campus",
       link: null,
-      image: DS,
+      image: null,
     },
     {
       title: "Tools for Data Science",
@@ -149,13 +150,19 @@ export default function Certifications() {
 
               {/* Image */}
               <div className="overflow-hidden">
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full h-52 object-cover hover:scale-110 transition duration-500 cursor-pointer"
-                  onClick={() => setSelectedCert(cert)}
-                />
-              </div>
+                    {cert.image ? (
+                        <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="w-full h-52 object-cover hover:scale-110 transition duration-500 cursor-pointer"
+                        onClick={() => cert.image && setSelectedCert(cert)}
+                        />
+                    ) : (
+                        <div className="w-full h-52 flex items-center justify-center bg-gray-800 text-gray-400">
+                        Certificate not uploaded yet
+                        </div>
+                    )}
+                    </div>
 
               {/* Content */}
               <div className="p-6 text-left">
@@ -203,7 +210,7 @@ export default function Certifications() {
 
             {/* Image */}
             <img
-              src={selectedCert.image}
+              src={selectedCert.image || placeholderImg}
               alt={selectedCert.title}
               className="w-full rounded-lg"
             />

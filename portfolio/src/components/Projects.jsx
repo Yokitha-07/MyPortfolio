@@ -4,6 +4,7 @@ import mernImg from "../assets/ecommerce.png";
 import semanticSearchImg from "../assets/Semantic.png";
 import chatbot from "../assets/chatbot.png";
 import studentRegImg from "../assets/registration.png"
+import govimarktImg from "../assets/govimarkt.png"
 
 const projects =  [
     {
@@ -84,25 +85,25 @@ const projects =  [
   image: studentRegImg,
   github: "https://github.com/Yokitha-07/student-registration-form",
   demo: "https://studentregistrationform123.netlify.app/",
-}
+},
+{
+  title: "GoviMarkt E-Commerce Platform",
+  desc: "Full-stack multi-vendor e-commerce platform for Sri Lankan farmers with PayHere payments, role-based dashboards, wishlist, live search, order tracking, and multilingual support.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PayHere"
+  ],
+  image: govimarktImg,
+  gitLab: "https://gitlab.com/Yokitha/govimarkt",
+  demo: "https://govimarkt.vercel.app/",
+},
 ];
 
-// export default function Projects() {
-//   return (
-//     <section id="projects" className="py-20 bg-gray-900 text-white">
-//       <h2 className="text-3xl text-center mb-10">Projects</h2>
-
-//       <div className="grid md:grid-cols-2 gap-6 px-10">
-//         {projects.map((p, i) => (
-//           <div key={i} className="bg-gray-800 p-6 rounded-xl hover:shadow-lg">
-//             <h3 className="text-xl font-bold">{p.title}</h3>
-//             <p className="mt-2">{p.desc}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
 
 export default function Projects() {
   return (

@@ -3,96 +3,15 @@ import DSAI from "../assets/pythonforaidatascience.jpeg";
 import DBSQL from "../assets/databasesand sql.jpeg";
 import tools from "../assets/tools.jpeg"
 
-// export default function Certifications() {
-//   const certs = [
-//     {
-//       title: "What is Data Science? ",
-//       issuer: "Coursera",
-//       link: "https://www.coursera.org/account/accomplishments/verify/EMSSVJ5VQW33",
-//       image: DS,
-//     },
-//     {
-//       title: "Diploma in Information Technology",
-//       issuer: "University of Colombo",
-//       link: "https://ucsc.cmb.ac.lk/verify/",
-//       image: DS,
-//     },
-//     {
-//       title: "Python for Data Science, AI & Development",
-//       issuer: "Coursera",
-//       link: "https://www.coursera.org/account/accomplishments/records/6E1LL6E5QSB8",
-//       image: DSAI
-//     },
-//     {
-//       title: "Databases and SQL for Data Science with Python",
-//       issuer: "Cousera",
-//       link: "https://www.coursera.org/account/accomplishments/records/I3YYV3M5KVSG",
-//       image: DBSQL
-//     },
-//      {
-//       title: "Diploma in English and Diploma in Information and Communication Technology",
-//       issuer: "ICBT Campus",
-//       link: null,
-//       image: DS,
-//     },
-//     {
-//       title: "Tools for Data Science",
-//       issuer: "IBM, Coursera",
-//       link: "https://www.coursera.org/account/accomplishments/records/ZFGX4S5AOOZW",
-//       image: tools,
-//     },
-//   ];
+// 1. Add state
 
-//   return (
-//     <section id="certifications" className="bg-black text-white py-16 px-6">
-//       <div className="max-w-6xl mx-auto text-center">
 
-//         <h2 className="text-3xl font-bold mb-4">Certifications</h2>
-//         <p className="text-gray-400 mb-10">
-//           My verified certifications in AI, Machine Learning, and Data Science.
-//         </p>
-
-//         <div className="grid md:grid-cols-3 gap-8">
-
-//           {certs.map((cert, index) => (
-//             <div
-//               key={index}
-//               className="bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-purple-500/30 hover:-translate-y-2 transition duration-300"
-//             >
-//               {/* Image */}
-//               <img
-//                 src={cert.image}
-//                 alt={cert.title}
-//                 className="w-full h-48 object-cover"
-//               />
-
-//               {/* Content */}
-//               <div className="p-6 text-left">
-//                 <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-//                 <p className="text-gray-400 mb-4">{cert.issuer}</p>
-
-//                 <a
-//                   href={cert.link}
-//                   target="_blank"
-//                   rel="noreferrer"
-//                   className="inline-block px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition"
-//                 >
-//                   View Certificate
-//                 </a>
-//               </div>
-//             </div>
-//           ))}
-
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 import { useState } from "react";
 
 export default function Certifications() {
-  const [selectedCert, setSelectedCert] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+const [selectedCert, setSelectedCert] = useState(null);
 const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not+Available";
 
     const certs = [
@@ -140,16 +59,16 @@ const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not
 
         <h2 className="text-4xl font-bold mb-10">Certifications</h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* <div className="grid md:grid-cols-3 gap-8">
 
           {certs.map((cert, index) => (
             <div
               key={index}
               className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:shadow-purple-500/30 transition"
-            >
+            > */}
 
               {/* Image */}
-              <div className="overflow-hidden">
+              {/* <div className="overflow-hidden">
                     {cert.image ? (
                         <img
                         src={cert.image}
@@ -162,10 +81,10 @@ const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not
                         Certificate not uploaded yet
                         </div>
                     )}
-                    </div>
+                    </div> */}
 
               {/* Content */}
-              <div className="p-6 text-left">
+              {/* <div className="p-6 text-left">
 
                 <span className="text-xs bg-purple-600 px-3 py-1 rounded-full">
                   {cert.issuer}
@@ -186,7 +105,91 @@ const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not
             </div>
           ))}
 
-        </div>
+        </div> */}
+
+        <div className="max-w-4xl mx-auto">
+
+  {/* Featured Certificate */}
+  <div className="relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+
+    <img
+      src={certs[activeIndex].image || placeholderImg}
+      alt={certs[activeIndex].title}
+      className="w-full h-[400px] object-cover"
+    />
+
+    {/* Left Arrow */}
+    <button
+      onClick={() =>
+        setActiveIndex((prev) =>
+          prev === 0 ? certs.length - 1 : prev - 1
+        )
+      }
+      className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 px-3 py-2 rounded-full"
+    >
+      ◀
+    </button>
+
+    {/* Right Arrow */}
+    <button
+      onClick={() =>
+        setActiveIndex((prev) =>
+          prev === certs.length - 1 ? 0 : prev + 1
+        )
+      }
+      className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 px-3 py-2 rounded-full"
+    >
+      ▶
+    </button>
+
+    {/* Info */}
+    <div className="p-6 text-left">
+      <span className="text-xs bg-purple-600 px-3 py-1 rounded-full">
+        {certs[activeIndex].issuer}
+      </span>
+
+      <h3 className="text-xl font-semibold mt-3">
+        {certs[activeIndex].title}
+      </h3>
+
+      <button
+        onClick={() => setSelectedCert(certs[activeIndex])}
+        className="mt-4 px-5 py-2 bg-purple-600 rounded-lg hover:bg-purple-700"
+      >
+        View Certificate
+      </button>
+    </div>
+  </div>
+
+  {/* Thumbnails */}
+  <div className="flex gap-4 mt-6 overflow-x-auto">
+
+    {certs.map((cert, index) => (
+      <div
+        key={index}
+        onClick={() => setActiveIndex(index)}
+        className={`min-w-[120px] cursor-pointer border rounded-lg overflow-hidden ${
+          activeIndex === index
+            ? "border-purple-500"
+            : "border-white/10"
+        }`}
+      >
+        {cert.image ? (
+          <img
+            src={cert.image}
+            alt={cert.title}
+            className="h-24 w-full object-cover"
+          />
+        ) : (
+          <div className="h-24 flex items-center justify-center bg-gray-800 text-xs text-gray-400">
+            No Image
+          </div>
+        )}
+      </div>
+    ))}
+
+  </div>
+</div>
       </div>
 
       {/* ================= MODAL ================= */}

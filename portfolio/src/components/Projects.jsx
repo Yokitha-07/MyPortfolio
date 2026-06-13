@@ -7,24 +7,22 @@ import studentRegImg from "../assets/registration.png"
 import govimarktImg from "../assets/govimarkt.png"
 
 const projects =  [
-    {
-  title: "MERN E-Commerce Platform",
-  desc: "Full-featured e-commerce marketplace built using the MERN stack. Includes product variants, 3D product viewer, AR try-on, promo codes, secure payments via PayHere, and a role-based admin dashboard for managing products and orders.",
+  {
+  title: "GoviMarkt E-Commerce Platform",
+  desc: "Full-stack multi-vendor e-commerce platform for Sri Lankan farmers with PayHere payments, role-based dashboards, wishlist, live search, order tracking, and multilingual support.",
   tech: [
-    "MongoDB",
-    "Express",
     "React",
+    "TypeScript",
+    "Tailwind CSS",
     "Node.js",
-    "TailwindCSS",
-    "JWT Authentication",
-    "PayHere API",
-    "TensorFlow BodyPix",
-    "Model Viewer"
+    "Express",
+    "MongoDB",
+    "PayHere"
   ],
-  image: mernImg,
-  github: "https://github.com/Yokitha-07/ecommerce-mern-app",
-  demo: "https://main.d3dw11vyw3a8cq.amplifyapp.com/"
-},
+  image: govimarktImg,
+  gitLab: "https://gitlab.com/Yokitha/govimarkt",
+  demo: "https://govimarkt.vercel.app/",
+  },
   {
   title: "AI Chatbot",
   desc: "AI chatbot built with LangChain, Streamlit, and Ollama (Gemma3). Runs locally and demonstrates LLM integration.",
@@ -87,21 +85,24 @@ const projects =  [
   demo: "https://studentregistrationform123.netlify.app/",
 },
 {
-  title: "GoviMarkt E-Commerce Platform",
-  desc: "Full-stack multi-vendor e-commerce platform for Sri Lankan farmers with PayHere payments, role-based dashboards, wishlist, live search, order tracking, and multilingual support.",
+  title: "MERN E-Commerce Platform",
+  desc: "Full-featured e-commerce marketplace built using the MERN stack. Includes product variants, 3D product viewer, AR try-on, promo codes, secure payments via PayHere, and a role-based admin dashboard for managing products and orders.",
   tech: [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "Express",
     "MongoDB",
-    "PayHere"
+    "Express",
+    "React",
+    "Node.js",
+    "TailwindCSS",
+    "JWT Authentication",
+    "PayHere API",
+    "TensorFlow BodyPix",
+    "Model Viewer"
   ],
-  image: govimarktImg,
-  gitLab: "https://gitlab.com/Yokitha/govimarkt",
-  demo: "https://govimarkt.vercel.app/",
-},
+  image: mernImg,
+  github: "https://github.com/Yokitha-07/ecommerce-mern-app",
+  demo: "https://main.d3dw11vyw3a8cq.amplifyapp.com/"
+}
+
 ];
 
 

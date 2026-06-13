@@ -1,7 +1,15 @@
 import DS from "../assets/whatisdatascience.jpeg";
 import DSAI from "../assets/pythonforaidatascience.jpeg";
 import DBSQL from "../assets/databasesand sql.jpeg";
-import tools from "../assets/tools.jpeg"
+import tools from "../assets/tools.jpeg";
+import icbt from "../assets/Icbt_certificate.jpg";
+import dit from "../assets/DIT_certificate.jpg";
+import hdit from "../assets/HDIT_certificate.jpg";
+import dmi from "../assets/java_certficate.jpg";
+import eng_prof from "../assets/english_professional.jpg";
+import eng_special from "../assets/english_special.jpg";
+import kickstart from "../assets/kickstart.jpg";
+import huddle from "../assets/s19huddle.jpg";
 
 // 1. Add state
 
@@ -15,6 +23,12 @@ const [selectedCert, setSelectedCert] = useState(null);
 const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not+Available";
 
     const certs = [
+      {
+      title: "Higher Diploma in Information Technology",
+      issuer: "University of Colombo",
+      link: "https://ucsc.cmb.ac.lk/verify/",
+      image: hdit,
+    },
     {
       title: "What is Data Science?",
       issuer: "Coursera",
@@ -25,7 +39,7 @@ const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not
       title: "Diploma in Information Technology",
       issuer: "University of Colombo",
       link: "https://ucsc.cmb.ac.lk/verify/",
-      image: null,
+      image: dit,
     },
     {
       title: "Python for Data Science, AI & Development",
@@ -40,17 +54,46 @@ const placeholderImg = "https://via.placeholder.com/600x400?text=Certificate+Not
       image: DBSQL,
     },
     {
-      title: "Diploma in ICT & English",
-      issuer: "ICBT Campus",
-      link: null,
-      image: null,
-    },
-    {
       title: "Tools for Data Science",
       issuer: "IBM, Coursera",
       link: "https://www.coursera.org/account/accomplishments/records/ZFGX4S5AOOZW",
       image: tools,
     },
+    {
+      title: "Certificate Course in English for Special Purposes",
+      issuer: "University of Peradeniya",
+      link: null,
+      image: eng_special,
+    },
+    {
+      title: "Certificate Course in English for Professional Purposes",
+      issuer: "University of Peradeniya",
+      link: null,
+      image: eng_prof,
+    },
+    {
+      title: "Kickstart Weekend 2022",
+      issuer: "University of Peradeniya",
+      link: null,
+      image: kickstart,
+    },
+    {
+      title: "S-19 Huddle",
+      issuer: "University of Peradeniya",
+      link: null,
+      image: huddle,
+    },
+    {
+      title: "Certified in JAVA Programming Language",
+      issuer: "DMI COMPUTER EDUCATION",
+      link: null,
+      image: dmi,
+    },{
+      title: "Diploma in ICT & English",
+      issuer: "ICBT Campus",
+      link: null,
+      image: icbt,
+    }
   ];
 
   return (

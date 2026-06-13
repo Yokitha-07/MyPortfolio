@@ -3,7 +3,7 @@
 const skillCategories = [
   {
     title: "Programming Languages",
-    skills: ["Python"],
+    skills: ["Python", "Java", "Php"],
   },
   {
     title: "AI/ML Frameworks",
@@ -15,7 +15,7 @@ const skillCategories = [
   },
   {
     title: "Web Development",
-    skills: ["HTML5", "CSS3", "FastAPI", "React.js", "Node.js", "Express.js", "Streamlit"],
+    skills: ["HTML5", "CSS3", "FastAPI", "React.js", "Node.js", "Express.js", "Streamlit", "JavaScript", "TypeScript"],
   },
   {
     title: "Cloud & DevOps",

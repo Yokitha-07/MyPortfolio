@@ -61,7 +61,7 @@ export default function About() {
 
             <p className="text-sm text-gray-400">
               Sri Lanka IT Training Foundation / SoftwarePlus Pvt Ltd  
-              <br /> Nov 2025 – Present
+              <br /> Nov 2025 – June 2026
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-sm">

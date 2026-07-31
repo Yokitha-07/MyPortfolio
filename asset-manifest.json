@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.071f36d5.css",
+    "main.js": "/MyPortfolio/static/js/main.1c76e9bb.js",
+    "static/js/453.635f5f07.chunk.js": "/MyPortfolio/static/js/453.635f5f07.chunk.js",
+    "static/media/ecommerce.png": "/MyPortfolio/static/media/ecommerce.8bda7b526b4e3ad2c2c5.png",
+    "static/media/govimarkt.png": "/MyPortfolio/static/media/govimarkt.ee99d2f0f541eb7109e4.png",
+    "static/media/chatbot.png": "/MyPortfolio/static/media/chatbot.68bc056e19b3d563106b.png",
+    "static/media/HousePricePrediction.png": "/MyPortfolio/static/media/HousePricePrediction.03b0e6cb05735fa2f021.png",
+    "static/media/databasesand sql.jpeg": "/MyPortfolio/static/media/databasesand sql.e893db7cbdf92cad5b87.jpeg",
+    "static/media/whatisdatascience.jpeg": "/MyPortfolio/static/media/whatisdatascience.df15d11af41072821c1e.jpeg",
+    "static/media/pythonforaidatascience.jpeg": "/MyPortfolio/static/media/pythonforaidatascience.bd41060f7add60254af7.jpeg",
+    "static/media/tools.jpeg": "/MyPortfolio/static/media/tools.7f453cdf3c6bb543ab92.jpeg",
+    "static/media/java_certficate.jpg": "/MyPortfolio/static/media/java_certficate.1c98e5e9ca183e7ff155.jpg",
+    "static/media/kickstart.jpg": "/MyPortfolio/static/media/kickstart.243c1f4edb32ae45d4cf.jpg",
+    "static/media/s19huddle.jpg": "/MyPortfolio/static/media/s19huddle.dc3a370c5cd2f77108e9.jpg",
+    "static/media/HDIT_certificate.jpg": "/MyPortfolio/static/media/HDIT_certificate.a840dc947b8fe514178c.jpg",
+    "static/media/profile.jpg": "/MyPortfolio/static/media/profile.6703b9a0b694e5792b96.jpg",
+    "static/media/english_special.jpg": "/MyPortfolio/static/media/english_special.621e03e448580ccc9d2c.jpg",
+    "static/media/english_professional.jpg": "/MyPortfolio/static/media/english_professional.a638cc018bccd22e1452.jpg",
+    "static/media/Semantic.png": "/MyPortfolio/static/media/Semantic.246660367fc0b6a389f9.png",
+    "static/media/Icbt_certificate.jpg": "/MyPortfolio/static/media/Icbt_certificate.2b1e1d18be057544ee2c.jpg",
+    "static/media/DIT_certificate.jpg": "/MyPortfolio/static/media/DIT_certificate.49c3aa1b57f1a0308f3d.jpg",
+    "static/media/SentimentImg.png": "/MyPortfolio/static/media/SentimentImg.4820d1db83ad1a1f6937.png",
+    "static/media/registration.png": "/MyPortfolio/static/media/registration.27734012263d283e211d.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.071f36d5.css.map": "/MyPortfolio/static/css/main.071f36d5.css.map",
+    "main.1c76e9bb.js.map": "/MyPortfolio/static/js/main.1c76e9bb.js.map",
+    "453.635f5f07.chunk.js.map": "/MyPortfolio/static/js/453.635f5f07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.071f36d5.css",
+    "static/js/main.1c76e9bb.js"
+  ]
+}

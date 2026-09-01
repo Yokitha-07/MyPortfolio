@@ -37,7 +37,7 @@ const projects =  [
     tech: ["Python", "FastAPI", "Scikit-learn", "JavaScript"],
     image: houseImg,
     github: "https://github.com/Yokitha-07/house-price-deploy",
-    demo: "https://main.dztk3kh4peeu8.amplifyapp.com/",
+    demo: "https://house-price-prediction-yokitha.netlify.app/",
   },
   {
     title: "Text Sentiment Analyzer (AI Web App)",
@@ -45,7 +45,7 @@ const projects =  [
     tech: ["React", "FastAPI", "Python", "Cohere API", "JavaScript", "Pydantic", "Uvicorn"],
     image: sentimentImg,
     github: "https://github.com/Yokitha-07/sentiment-analysis-app",
-    demo: "http://yokitha-sentiment-analyzer.s3-website.eu-north-1.amazonaws.com/"
+    demo: "https://sentimentanalyzer-yokitha.netlify.app/"
  },
  {
   title: "Semantic Search Engine (BM25 vs Dense Retrieval)",
@@ -100,7 +100,7 @@ const projects =  [
   ],
   image: mernImg,
   github: "https://github.com/Yokitha-07/ecommerce-mern-app",
-  demo: "https://main.d3dw11vyw3a8cq.amplifyapp.com/"
+  demo: "https://mern-ecommerce-app-yokitha.netlify.app/"
 }
 
 ];
